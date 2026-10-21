@@ -1,1 +1,131 @@
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #160f24;
+  color: #fff4df;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #35204f, #171024);
+  border-bottom: 2px solid #d9b66d;
+}
+
+header h1 {
+  color: #f2d48c;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #d4c5e7;
+}
+
+main {
+  width: 90%;
+  max-width: 700px;
+  margin: 35px auto;
+}
+
+.intro,
+.result,
+.history {
+  background: #241a35;
+  border: 1px solid #58416e;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 25px #0003;
+}
+
+h2 {
+  color: #f2d48c;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+}
+
+select {
+  display: block;
+  margin: 0 auto 18px;
+  padding: 12px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #b99bda;
+  background: #171024;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  background: #e4c477;
+  color: #24162f;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ffe4a0;
+  transform: translateY(-2px);
+}
+
+#cardSymbol {
+  font-size: 70px;
+  color: #f2d48c;
+  margin: 10px;
+}
+
+.result {
+  min-height: 180px;
+}
+
+#cardMeaning {
+  line-height: 1.9;
+}
+
+#historyList {
+  padding-left: 25px;
+  text-align: left;
+}
+
+#historyList li {
+  padding: 8px 0;
+  border-bottom: 1px solid #58416e;
+}
+
+footer {
+  padding: 25px;
+  color: #b8a8ca;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 94%;
+  }
+
+  .intro,
+  .result,
+  .history {
+    padding: 18px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+}
+
