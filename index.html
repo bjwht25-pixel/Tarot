@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystic Tarot | เว็บดูดวงไพ่ทาโรต์</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✦ Mystic Tarot ✦</h1>
+    <p>ค้นหาข้อความจากไพ่ทาโรต์</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>จักรวาลมีอะไรอยากบอกคุณ?</h2>
+      <p>ตั้งจิตให้สงบ แล้วเลือกไพ่เพื่ออ่านคำทำนาย</p>
+
+      <label for="topic">เลือกหัวข้อดูดวง</label>
+      <select id="topic">
+        <option value="ภาพรวม">ภาพรวม</option>
+        <option value="ความรัก">ความรัก</option>
+        <option value="การเรียน">การเรียน</option>
+        <option value="การงาน">การงาน</option>
+      </select>
+
+      <button id="drawButton">เปิดไพ่ทาโรต์</button>
+    </section>
+
+    <section id="result" class="result" aria-live="polite">
+      <div id="cardSymbol">✧</div>
+      <h2 id="cardName">ไพ่ของคุณจะปรากฏที่นี่</h2>
+      <p id="cardMeaning">
+        กดปุ่มเปิดไพ่เพื่อเริ่มต้น
+      </p>
+    </section>
+
+    <section class="history">
+      <h2>ประวัติการดูดวง</h2>
+      <button id="historyButton">ดูประวัติ</button>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>เว็บไซต์เพื่อความบันเทิงและการทบทวนตัวเอง</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
